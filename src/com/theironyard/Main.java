@@ -74,6 +74,7 @@ public class Main {
             JsonParser parser = new JsonParser();
             return parser.parse(contents, Movie.class);
         } catch (FileNotFoundException e) {
+            System.out.println("An error occurred while trying to load data.");
         }
         return null;
     }
